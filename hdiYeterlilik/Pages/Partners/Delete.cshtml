@@ -1,0 +1,17 @@
+﻿@page "{id}"
+@model hdiYeterlilik.Pages.Partners.DeletePartnerModel
+
+<h2>Delete Partner</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control" value="@Model.Partner.PartnerName" readonly />
+    </div>
+    <div class="form-group">
+        <label>Contact</label>
+        <input type="text" class="form-control" value="@Model.Partner.ContactEmail" readonly />
+    </div>
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a href="@Url.Page("Partners")" class="btn btn-secondary">Cancel</a>
+</form>

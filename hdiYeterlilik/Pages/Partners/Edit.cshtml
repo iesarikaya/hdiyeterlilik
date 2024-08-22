@@ -1,0 +1,17 @@
+﻿@page "{id}"
+@model hdiYeterlilik.Pages.Partners.EditPartnerModel
+
+
+<h2>Edit Partner</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label for="Name">Name</label>
+        <input type="text" id="Name" name="Partner.PartnerName" class="form-control" value="@Model.Partner.PartnerName" />
+    </div>
+    <div class="form-group">
+        <label for="Contact">Contact</label>
+        <input type="text" id="Contact" name="Partner.ContactEmail" class="form-control" value="@Model.Partner.ContactEmail" />
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
